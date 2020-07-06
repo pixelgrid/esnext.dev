@@ -8,15 +8,25 @@
 <style>
 body{
   display: flex;
-  place-items: center;
-  place-content: center;
   height: 100vh;
+  place-content: center;
+  place-items: center;
 }
 .es{
-  padding: 20px;
-  padding-right: 0;
-  padding-bottom: 0;
+  position: relative;
+}
+.es:after{
   background-color: #edd933;
+  bottom: 0;
+  content: '';
+  height: 100%;
+  padding-bottom: 0;
+  padding-right: 0;
+  padding: 20px;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  z-index: -1;
 }
 .dot{
   animation: 1.5s infinite linear pulse;
